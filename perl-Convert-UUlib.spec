@@ -12,7 +12,6 @@ Group: 		Development/Perl
 Source: 	%{module}-%{version}.tar.gz
 URL: 		http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires: 	perl
 Summary:	%{module} module for perl
 
