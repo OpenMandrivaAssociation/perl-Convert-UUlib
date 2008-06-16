@@ -1,7 +1,7 @@
 %define	module	Convert-UUlib
 %define	name	perl-%{module}
-%define	version	1.09
-%define	release	%mkrel 2
+%define	version	1.11
+%define	release	%mkrel 1
 
 Name: 		%{name}
 Version: 	%{version}
