@@ -1,27 +1,26 @@
-%define	module	Convert-UUlib
-%define	name	perl-%{module}
-%define	version	1.12
-%define	release	%mkrel 1
+%define	upstream_name	 Convert-UUlib
+%define	upstream_version 1.12
 
-Name: 		%{name}
-Version: 	%{version}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 Epoch:		2
-Release: 	%{release}
+
+Summary:	%{upstream_name} module for perl
 License: 	GPL
 Group: 		Development/Perl
-Source: 	%{module}-%{version}.tar.gz
-URL: 		http://search.cpan.org/dist/%{module}/
+Url: 		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
-BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires: 	perl
-Summary:	%{module} module for perl
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Convert::UUlib is a Perl interface to the uulib library (a.k.a.
 uudeview/uuenview).
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor 
@@ -39,9 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
+%doc README Changes COPYING doc
 %{perl_vendorarch}/auto/Convert
 %{perl_vendorarch}/Convert
 %{_mandir}/*/*
-%doc README Changes COPYING doc
-
-
