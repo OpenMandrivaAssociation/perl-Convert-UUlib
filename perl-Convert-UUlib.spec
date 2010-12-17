@@ -1,9 +1,9 @@
 %define	upstream_name	 Convert-UUlib
-%define upstream_version 1.33
+%define upstream_version 1.34
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 Epoch:		2
 
 Summary:	%{upstream_name} module for perl
