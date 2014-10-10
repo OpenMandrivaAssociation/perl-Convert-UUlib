@@ -5,7 +5,7 @@ Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Epoch:		2
 Version:	%perl_convert_version %{modver}
-Release:	11
+Release:	12
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
