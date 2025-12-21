@@ -10,6 +10,7 @@ License:	GPLv2
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{modname}-%{modver}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl-devel
 
 %description
