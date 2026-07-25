@@ -1,15 +1,15 @@
 %define	modname	 Convert-UUlib
-%define modver 1.4
+%define modver 1.8
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Epoch:		2
-Version:	%perl_convert_version %{modver}
-Release:	17
+Version:	%{modver}
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/Convert/%{modname}-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/Convert-UUlib
+Source0:	https://cpan.metacpan.org/authors/id/M/ML/MLEHMANN/Convert-UUlib-%{modver}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 
