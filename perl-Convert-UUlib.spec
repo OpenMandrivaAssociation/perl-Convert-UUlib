@@ -5,12 +5,13 @@ Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Epoch:		2
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Convert-UUlib
 Source0:	https://cpan.metacpan.org/authors/id/M/ML/MLEHMANN/Convert-UUlib-%{modver}.tar.gz
 BuildRequires:	make
+BuildRequires: perl(Canary::Stability)
 BuildRequires:	perl-devel
 
 %description
