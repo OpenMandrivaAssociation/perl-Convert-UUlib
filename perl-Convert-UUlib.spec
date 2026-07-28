@@ -5,7 +5,7 @@ Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Epoch:		2
 Version:	%{modver}
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Convert-UUlib
@@ -13,6 +13,7 @@ Source0:	https://cpan.metacpan.org/authors/id/M/ML/MLEHMANN/Convert-UUlib-%{modv
 BuildRequires:	make
 BuildRequires: perl(Canary::Stability)
 BuildRequires:	perl-devel
+BuildRequires:	perl(common::sense)
 
 %description
 Convert::UUlib is a Perl interface to the uulib library (a.k.a.
